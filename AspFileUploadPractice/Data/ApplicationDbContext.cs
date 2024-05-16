@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using AspFileUploadPractice.Models;
 
 namespace AspFileUploadPractice.Data
 {
@@ -9,5 +10,6 @@ namespace AspFileUploadPractice.Data
             : base(options)
         {
         }
+        public DbSet<AspFileUploadPractice.Models.Speaker> Speaker { get; set; } = default!;
     }
 }
